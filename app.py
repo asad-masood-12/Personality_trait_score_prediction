@@ -74,7 +74,7 @@ def main():
         image = Image.open(uploaded_image)
         st.image(image, caption="Uploaded Image", use_column_width=True)
 
-        MODEL_PATH = r"D:\Asad\AUG AI\VGG16_Personality-Traits\Streamlit_VGG16\Model_2.0.h5"
+        MODEL_PATH = r"Model_2.0.h5"
         predictions = predict_personality_traits(MODEL_PATH, image)
 
         if predictions:
